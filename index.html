@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Segitiga</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Kalkulator Segitiga</h1>
+    </header>
+    <main>
+        <!-- Kotak kalkulator -->
+        <section class="kal">
+            <!-- Kalkulator untuk menghitung luas -->
+            <div id="kl">
+                <div id="hasil_luas">
+                </div>
+                <h3>Menghitung luas</h3>
+                <input id="alas" type="number" placeholder="Alas" required>
+                <br>
+                <input id="tinggi" type="number" placeholder="Tinggi" required>
+                <br>
+                <button onclick="klikLuas()" id="hitung-luas">Hitung</button>
+                <button onclick="resetLuas()" id="reset-luas">Reset</button>
+            </div>
+            <!-- Kalkulator untuk menghitung keliling -->
+            <div id="kk">
+                <div id="hasil_keliling"></div>
+                <h3>Menghitung keliling</h3>
+                <input id="sisia" type="number" placeholder="Sisi A">
+                <br>
+                <input id="sisib" type="number" placeholder="Sisi B">
+                <br>
+                <input id="sisic" type="number" placeholder="Sisi C">
+                <br>
+                <button onclick="klikKeliling()" id="hitung-keliling">Hitung</button>
+                <button onclick="resetKeliling()" id="reset-luas">Reset</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="footer">
+            <a href="https://www.linkedin.com/in/muhammad-farik-efendi-97a5a2178/" target="_blank"><img
+                    src="./assets/linkedin.png" alt="instalogo">&nbsp;Linkedinku</a>
+            <p>&copy;FarikForRevou</p>
+        </div>
+    </footer>
+</body>
+
+</html>
